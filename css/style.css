@@ -1,0 +1,46 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav .row{
+  margin-top: 5px;
+}
+
+nav img{
+  width: 200px;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 5px;
+  line-height: 30px;
+}
+
+nav ul li a{
+  color: hsl(221,93%,16%);
+}
+
+nav ul li:hover a{
+  text-decoration: none;
+  color: rgb(0,99,255);
+}
+
+nav .btn{
+  background-color: white;
+  border: 1px solid rgb(0,99,255);
+  font-size: 1.3rem;
+  color: rgb(0,99,255);
+}
+
+nav .btn:hover{
+  background-color: rgb(0,99,255);
+  color: white;
+}
