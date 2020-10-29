@@ -6,12 +6,10 @@ li{
   list-style: none;
 }
 
-a{
-  text-decoration: none;
-}
-
-nav .row{
-  margin-top: 5px;
+nav{
+  padding-top: 5px;
+  height: 30px;
+  background-color: white;
 }
 
 nav img{
@@ -26,6 +24,7 @@ nav ul li{
 
 nav ul li a{
   color: hsl(221,93%,16%);
+  text-decoration: none;
 }
 
 nav ul li:hover a{
@@ -43,4 +42,59 @@ nav .btn{
 nav .btn:hover{
   background-color: rgb(0,99,255);
   color: white;
+}
+
+/* /nav */
+
+.jumbotron{
+  background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+  margin-top: 50px;
+}
+
+.jumbotron .col-lg-7{
+  color: white;
+}
+
+#hero_box{
+  background-color: white;
+  padding: 20px;
+}
+
+#hero_box div.form-group{
+  margin: 10px;
+}
+
+#hero_box .form-control{
+  margin: 10px 0;
+}
+
+#hero_box div.form-group button{
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 0px;
+  height: 30px;
+}
+
+#hero_box div.form-group button:first-of-type{
+  background-color: rgb(0,99,255);
+  color: white;
+  font-weight: 500;
+}
+
+#hero_box div.form-group button:nth-of-type(2){
+  font-weight: 500;
+  box-shadow: 1px 1px 1px grey;
+  background-color: white;
+}
+
+#hero_box button .col-xs-8 {
+  padding: 0 0 0 10px;
+}
+#hero_box p{
+  font-size: 1.3rem;
+}
+
+#hero_box p a{
+  text-decoration: underline;
 }
