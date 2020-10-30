@@ -6,6 +6,10 @@ li{
   list-style: none;
 }
 
+p{
+  color: #5b6987;
+}
+
 nav{
   padding-top: 5px;
   height: 30px;
@@ -53,6 +57,10 @@ nav .btn:hover{
 }
 
 .jumbotron .col-lg-7{
+  color: white;
+}
+
+.jumbotron p{
   color: white;
 }
 
@@ -138,13 +146,86 @@ nav .btn:hover{
   padding: 10px;
   width: 70%;
   margin: auto;
+  font-size: 1.2em;
 }
 
 #deploy .container{
-  margin-top: 40px;
+  margin-top: 50px;
 }
+
+#deploy .row{
+  padding-bottom: 20px;
+}
+
+#deploy ul{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 #deploy ul li{
+  padding: 5px;
+  font-size: 1.6rem;
   color: rgba(3, 27, 78, 0.6);
-  border-left: 1px solid rgba(3, 27, 78, 0.6);
+  border-left: 2px solid rgba(3, 27, 78, 0.6);
   cursor: pointer;
 }
+
+#deploy ul li:hover{
+  color: #031b4e;
+  border-left: 2px solid rgb(0,99,255);
+}
+/* /deploy */
+.design{
+  background-color: rgb(243,245,249);
+  padding: 40px;
+}
+
+.design h2{
+  color: #031b4e;
+}
+
+.design img{
+  width: 70%;
+  margin: auto;
+}
+
+.design .container{
+  margin-top: 50px;
+}
+
+.design .col-lg-3{
+  height: 250px;
+}
+
+.design .fa-chevron-left{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #031b4e;
+  font-size: 2em;
+}
+
+.design .fa-chevron-right{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #031b4e;
+  font-size: 2em;
+}
+
+.design > p:nth-child(4){
+  color: #031b4e;
+  padding: 20px 0 0 0;
+}
+
+.design .bottoni_azzurri button{
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid rgb(0,99,255);
+  padding: 3px;
+}
+/* /design */
