@@ -127,3 +127,24 @@ nav .btn:hover{
   color: rgb(0, 80, 200);
   text-decoration: none;
 }
+/* /partner */
+/* /header */
+#deploy h2{
+  color: #031b4e;
+}
+
+#deploy > p{
+  color: #5b6987;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+}
+
+#deploy .container{
+  margin-top: 40px;
+}
+#deploy ul li{
+  color: rgba(3, 27, 78, 0.6);
+  border-left: 1px solid rgba(3, 27, 78, 0.6);
+  cursor: pointer;
+}
