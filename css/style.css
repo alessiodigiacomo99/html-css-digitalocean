@@ -304,3 +304,31 @@ section{
 #create button:hover{
   background-color: #CBD4E4;
 }
+/* /create */
+/* /main */
+#site_footer{
+  background-color: rgb(1,14,40);
+  padding: 40px 0;
+}
+
+#site_footer .col-lg-4 img{
+  padding: 10px 0;
+}
+
+#site_footer ul:first-of-type li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+#site_footer ul:first-of-type{
+  padding: 0;
+}
+
+#site_footer ul:first-of-type li a{
+  color: rgb(128,134,147);
+}
+
+#site_footer ul:first-of-type li a:hover{
+  color: white;
+}
