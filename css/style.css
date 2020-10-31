@@ -315,20 +315,36 @@ section{
   padding: 10px 0;
 }
 
-#site_footer ul:first-of-type li {
+#site_footer .col-lg-4 ul:first-of-type li {
   display: inline-block;
   padding: 5px;
   font-size: 1.5em;
 }
 
-#site_footer ul:first-of-type{
+#site_footer .col-lg-4 ul:first-of-type{
   padding: 0;
 }
 
-#site_footer ul:first-of-type li a{
+#site_footer .col-lg-4 ul:first-of-type li a{
   color: rgb(128,134,147);
 }
 
-#site_footer ul:first-of-type li a:hover{
+#site_footer .col-lg-4 ul:first-of-type li a:hover{
   color: white;
+}
+
+#site_footer .col-lg-8 .row ul li a{
+  color: rgb(128,134,147);
+}
+
+#site_footer .col-lg-8 .row ul li a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+#site_footer .col-lg-8 .row ul li:first-child{
+  padding: 10px 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
 }
