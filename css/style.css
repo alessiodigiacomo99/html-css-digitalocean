@@ -11,8 +11,7 @@ p{
 }
 
 nav{
-  padding-top: 5px;
-  height: 30px;
+  padding: 5px;
   background-color: white;
 }
 
@@ -34,6 +33,7 @@ nav ul li a{
 nav ul li:hover a{
   text-decoration: none;
   color: rgb(0,99,255);
+  transition: 0.2s ease;
 }
 
 nav .btn{
@@ -46,27 +46,44 @@ nav .btn{
 nav .btn:hover{
   background-color: rgb(0,99,255);
   color: white;
+  transition: 0.5s ease;
+}
+
+.hamburger{
+  display: none;
+  float: right;
+  margin: 5px;
+  font-size: 1.5em;
+  color: rgb(0,99,255);
 }
 
 /* /nav */
 
 .jumbotron{
   background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
-  margin-top: 50px;
   margin-bottom: 0;
 }
 
-.jumbotron .col-lg-7{
+.jumbotron .col-sm-7{
   color: white;
 }
 
 .jumbotron p{
   color: white;
+  font-weight: 100;
 }
 
 #hero_box{
   background-color: white;
   padding: 20px;
+}
+
+#hero_box h3:first-child{
+  color: #031b4e;
+}
+
+#hero_box h3:nth-child(2){
+  color: rgb(0,99,255);
 }
 
 #hero_box div.form-group{
@@ -95,27 +112,35 @@ nav .btn:hover{
   font-weight: 500;
   box-shadow: 1px 1px 1px grey;
   background-color: white;
+  position: relative;
 }
 
-#hero_box button .col-xs-8 {
-  padding: 0 0 0 10px;
+#hero_box button .col-xs-12 i {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
 }
 
 #hero_box div.form-group button:first-of-type:hover{
   background-color: rgb(0, 80, 200);
+  transition: 0.5s ease;
 }
 
 #hero_box div.form-group button:nth-of-type(2):hover{
   color: black;
   border: 1px solid black;
+  transition: 0.5s ease;
 }
 
 #hero_box p{
   font-size: 1.3rem;
+  color: #031b4e;
 }
 
 #hero_box p a{
   text-decoration: underline;
+  display: inline-block;
 }
 /* /hero_box */
 .partner{
@@ -123,7 +148,7 @@ nav .btn:hover{
   background-color: rgb(243,245,249);
 }
 
-.partner .col-lg-2{
+.partner .col-sm-2{
   padding: 20px 0;
 }
 
@@ -153,11 +178,7 @@ section{
   font-size: 1.2em;
 }
 
-#deploy{
-  margin-top: 50px;
-}
-
-#deploy .row{
+#deploy .row .col-lg-6{
   padding-bottom: 20px;
 }
 
@@ -179,6 +200,7 @@ section{
 #deploy ul li:hover{
   color: #031b4e;
   border-left: 2px solid rgb(0,99,255);
+  transition: 0.2s ease;
 }
 /* /deploy */
 .design{
@@ -189,15 +211,23 @@ section{
   color: #031b4e;
 }
 
-.design img{
-  width: 100%;
+#design img{
+  width: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.design .col-sm-6{
+  height: 360px;
 }
 
 .design .container{
   margin-top: 50px;
 }
 
-.design .col-lg-3{
+.design .col-sm-3{
   height: 360px;
 }
 
@@ -242,11 +272,19 @@ section{
   color: #031b4e;
   padding: 5px 0;
 }
+
+#feature .col-sm-4{
+  padding: 10px;
+}
 /* /feature */
 #customers_data{
   background-color: #001892;
   color: white;
   font-size: 0.8em;
+}
+
+#customers_data .row .col-lg-6 {
+  padding: 10px 0;
 }
 
 #customers_data .row .col-lg-6 .row:not(:last-child){
@@ -258,7 +296,7 @@ section{
   padding-bottom: 5px;
 }
 
-#customers_data .row .col-lg-6 .row .col-lg-6{
+#customers_data .row .col-lg-6 .row .col-xs-7{
   opacity: 0.8;
 }
 
@@ -269,6 +307,7 @@ section{
 #customers_data .link_speed:hover{
   text-decoration: none;
   color: rgb(0,99,255);
+  transition: 0.2s ease;
 }
 /* /customers_data */
 #rockerbox .rocker{
@@ -303,6 +342,7 @@ section{
 
 #create button:hover{
   background-color: #CBD4E4;
+  transition: 0.5s ease;
 }
 /* /create */
 /* /main */
@@ -331,6 +371,7 @@ section{
 
 #site_footer .col-lg-4 ul:first-of-type li a:hover{
   color: white;
+  transition: 0.2s ease;
 }
 
 #site_footer .col-lg-8 .row ul li a{
@@ -340,6 +381,7 @@ section{
 #site_footer .col-lg-8 .row ul li a:hover{
   color: white;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 #site_footer .col-lg-8 .row ul li:first-child{
@@ -347,4 +389,58 @@ section{
   color: white;
   font-size: 1.2em;
   font-weight: 700;
+}
+/* /footer */
+
+@media screen and (max-width: 768px){
+  nav .col-lg-4:not(:first-child){
+    display: none;
+  }
+
+  .hamburger{
+    display: inline-block;
+  }
+
+  #deploy ul{
+    position: relative;
+    padding: 20px 0;
+  }
+
+  .design .col-sm-3{
+    display: none;
+  }
+
+  .design img{
+    width: 50%;
+    margin: auto;
+  }
+
+  #site_footer .col-lg-3 ul{
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  nav .col-lg-4:not(:first-child){
+    display: none;
+  }
+
+  .hamburger{
+    display: inline-block;
+  }
+
+  .jumbotron h1{
+    font-size: 2.5em;
+  }
+
+  .partner .col-sm-2 img{
+    width: 80%;
+  }
+
+  #site_footer .container{
+  }
+
+  #site_footer ul{
+    padding: 0;
+  }
 }
