@@ -55,6 +55,7 @@ nav .btn:hover{
   margin: 5px;
   font-size: 1.5em;
   color: rgb(0,99,255);
+  cursor: pointer;
 }
 
 /* /nav */
@@ -296,8 +297,12 @@ section{
   padding-bottom: 5px;
 }
 
-#customers_data .row .col-lg-6 .row .col-xs-7{
+#customers_data .row .col-lg-6 .row .col-xs-6{
   opacity: 0.8;
+}
+
+#customers_data .row .col-xs-4 {
+  text-align: right;
 }
 
 #customers_data .link_speed{
@@ -435,6 +440,11 @@ section{
 
   .partner .col-sm-2 img{
     width: 80%;
+  }
+
+  #customers_data .container{
+    width: 85%;
+    margin: auto;
   }
 
   #site_footer .container{
