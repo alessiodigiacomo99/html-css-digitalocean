@@ -116,7 +116,7 @@ nav .btn:hover{
   position: relative;
 }
 
-#hero_box button .col-xs-12 i {
+#hero_box button i {
   position: absolute;
   top: 50%;
   left: 5%;
